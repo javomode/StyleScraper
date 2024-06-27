@@ -6,7 +6,7 @@ path = "C:\Users\jaden\Documents\Jaden\Python Projects\StyleScraper\edgedriver_w
 wd = webdriver.Edge(path)
 
 url = "https://www.youtube.com/" #example url to test (grabbing youtube logo)
-urls
+urls_df = "C:\Users\jaden\Documents\Jaden\Python Projects\StyleScraper\jupyter helper files\top_sites.csv"
 # https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 response = requests.get(url)  #200 is ok, 404 is not found
 
@@ -18,3 +18,4 @@ if response == 200:
     page_content = response.text
 else:
     raise Exception(f"Failed: {response.status_code}")
+

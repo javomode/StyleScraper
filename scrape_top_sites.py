@@ -31,3 +31,5 @@ for idx in range(0,len(column_data), 7):
 
     df.loc[len(df)] = individual_row_data
 
+df.to_csv("top_sites") #make a csv to use in scrape_script
+
